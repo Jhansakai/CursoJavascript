@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adivina el número</title>
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<header>
+  <div class="logo">
+      <img src="logo.png" alt="Logo" class="logo-img">
+      <h1>Calculadora Básica</h1>
+  </div>
+  <nav>
+      <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="programas.html">Programas</a></li>
+          <li><a href="index2.html">Adivina un numero</a></li>
+      </ul>
+  </nav>
+  
+</header>
+<body>
+  <section class="card">
+     <div class="container">
+     <h1>Adivina el número</h1>
+     <p>Ingresa un número del 1 al 50:</p>
+     <input type="number" id="userInput" min="1" max="50" placeholder="Escribe un número" required>
+     <button onclick="checkGuess()">Adivinar</button>
+     <p id="resultMessage"></p>
+     <p id="attemptsMessage"></p>
+    </div>
+  </section> 
+  <script src="script2.js"></script>
+</body>
+<footer>
+  <p>Calculadora creada por Jasmel Blanco © 2024</p>
+</footer>
+</html>

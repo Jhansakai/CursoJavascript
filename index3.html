@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Logo" class="logo-img">
+        <h1>Piera,Papel,Tijeras,lagarto,Spock</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="programas.html">Programas</a></li>
+            <li><a href="index3.html">Juego</a></li>
+        </ul>
+    </nav> 
+</header>
+<body>
+    <div class="container1">
+        <p>Example of unordered lists:</p>
+        <ul class="a">
+        <li>Tijeras cortan papel</li>
+        <li>Papel cubre piedra</li>
+        <li>Piedra aplasta tijeras</li> 
+        <li>Piedra aplasta lagarto</li>
+        <li>Lagarto envenena Spock</li>
+        <li>Spock destruye tijeras</li>
+        <li>Tijeras decapitan lagarto</li>
+        <li>Lagarto come papel</li>
+        <li>Papel desaprueba Spock</li>
+        <li>Spock vaporiza piedra</li>
+        </ul> 
+    </div>
+
+<div class="container">
+    <div class="image-container">
+       <img src="defecto.png" alt="Imagen 1"  id="c-piedra" >
+       <img src="defecto.png" alt="Imagen 2"  id="c-papel" > 
+       <img src="defecto.png" alt="Imagen 3" id="c-tijera">
+       <img src="defecto.png" alt="Imagen 4" id="c-lagarto">
+       <img src="defecto.png" alt="Imagen 5" id="c-spock">
+    </div>
+    <h1>¡Piedra, Papel, Tijeras, Lagarto , Spock!</h1>
+    <div class="image-container">
+       <img src="piedra.png" alt="Piedra" id="Piedra" onclick="playGame('Piedra')">
+       <img src="papel.png" alt="Papel" id="Papel" onclick="playGame('Papel')">
+       <img src="tijera.png" alt="Tijera" id="Tijera" onclick="playGame('Tijera')">
+       <img src="lagarto.png" alt="Lagarto" id="Lagarto" onclick="playGame('Lagarto')">
+       <img src="spock.png" alt="Spock" id="Spock" onclick="playGame('Spock')">
+    </div>
+    <div class="result">
+       <p id="user-choice">Tu elección: </p>
+       <p id="computer-choice">Elección de la computadora: </p>
+       <h2 id="winner">Resultado: </h2>
+   </div>
+   <script src="script3.js"></script>
+</div>
+<body>
+    
+</body>   
+<footer>
+    <p>Juego creado por Jasmel Blanco © 2024</p>
+</footer>
+
+</html>
+

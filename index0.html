@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Básica </title>
+    <link rel="stylesheet" href="styles0.css">
+</head>
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Logo" class="logo-img">
+        <h1>Calculadora Básica</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="programas.html">Programas</a></li>
+            <li><a href="index0.html">Calculadora</a></li>
+        </ul>
+    </nav>
+    
+</header>
+
+<body>
+    <section class="card">
+        <br><br>
+        <label for="num1">Número 1:</label>
+        <input type="number" id="num1">
+        <br><br>
+        <label for="num2">Número 2:</label>
+        <input type="number" id="num2">
+        <br><br>
+        <div>
+        <button onclick="sumar()">Sumar</button>
+        <button onclick="restar()">Restar</button>
+        <button onclick="multiplicar()">Multiplicar</button>
+        <button onclick="dividir()">Dividir</button>
+        </div>
+        <br><br>
+        <h3>Resultado: <span id="resultado">0</span></h3>
+    </section>    
+    <script>
+        function sumar() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            const resultado = num1 + num2;
+            document.getElementById('resultado').textContent = resultado;
+        }
+
+        function restar() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            const resultado = num1 - num2;
+            document.getElementById('resultado').textContent = resultado;
+        }
+
+        function multiplicar() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            const resultado = num1 * num2;
+            document.getElementById('resultado').textContent = resultado;
+        }
+
+        function dividir () {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            const resultado = num1 / num2;
+            document.getElementById('resultado').textContent = resultado;
+        }
+     
+    </script>
+    <footer>
+        <p>Calculadora creada por Jasmel Blanco © 2024</p>
+    </footer>
+</body>
+</html>

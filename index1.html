@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Temperatura</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<header>
+  <div class="logo">
+      <img src="logo.png" alt="Logo" class="logo-img">
+      <h1>Calculadora Básica</h1>
+  </div>
+  <nav>
+      <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="programas.html">Programas</a></li>
+          <li><a href="index1.html">Calculadora de Temperatura</a></li>
+      </ul>
+  </nav>
+  
+</header>
+  <body>
+    <section class="card">
+      <div class="calculator-container">
+        <h1>Calculadora de Temperatura</h1>
+
+        <div class="input-container">
+          <label for="tempInput">Ingresa la temperatura:</label>
+          <input type="number" id="tempInput" placeholder="Valor numérico">
+        </div>
+
+        <div class="buttons-container">
+          <button onclick="convertTemperature('celsius')">Convertir Celsius a Kelvin y Fahrenheit </button>
+          <button onclick="convertTemperature('kelvin')">Convertir Kelvin a Celsius y Fahrenheit </button>
+          <button onclick="convertTemperature('fahrenheit')">Convertir Fahrenheit a Kelvin y Celsius</button>
+        </div>
+
+        <div class="result-container">
+         <p id="resultMessage"></p>
+        </div>
+      </div>
+    </section> 
+    <script src="script1.js"></script>
+  </body>
+<footer>
+  <p>Calculadora de temperatura creada por Jasmel Blanco © 2024</p>
+</footer>
+</html>

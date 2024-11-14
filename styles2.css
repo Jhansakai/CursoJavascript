@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  padding-top: 50px; /* Para que no se sobreponga el contenido al header */
+}
+
+/* Estilos del encabezado */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c3846;
+  color: white;
+  padding: 20px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #ff6347;
+}
+.body1 {
+  float: left;
+  width: 31%;
+  padding: 15px;
+  text-align: justify;
+}
+.card {
+  max-width: 400px;
+  margin: 100px auto; /* Para centrar la card y dejar espacio por encima del header */
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(37, 58, 240, 0.1);
+  text-align: center;
+}
+.card-container {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+.card h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card input {
+    padding: 8px;
+    font-size: 16px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.card button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #45a049;
+}
+
+#resultMessage {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.success {
+    color: green;
+}
+
+.failure {
+    color: red;
+}
+
+footer {
+  background-color: #2c3846;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
